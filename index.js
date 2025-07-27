@@ -8,10 +8,6 @@ const bot = new TelegramBot(token, { polling: true })
 
 const obj = {};
 
-
-
-
-
 const startGame = async(chatId) => {
     await bot.sendMessage(chatId, "kompyuter 0 dan 9 gacha son o'yladi, siz osha sonni topishga harakat qiling")
             const randomNumber = Math.floor(Math.random() * 10)
